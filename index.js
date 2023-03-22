@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Casino_1 = require("./Casino");
+var Bacara_1 = require("./Bacara");
+var Ruleta_1 = require("./Ruleta");
+var ruleta = new Ruleta_1.Ruleta('Ruleta', 'esquina jugador', 800);
+var bacara = new Bacara_1.Bacara('Bacara', 'centro jugador', 5000);
+var casino = new Casino_1.Casino('Treboles ', 'corazon y diamantes');
+casino.setCasinoJeux(ruleta);
+casino.setCasinoJeux(bacara);
+casino.getInf();
